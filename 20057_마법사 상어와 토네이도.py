@@ -68,4 +68,3 @@ for m in range(N):
     x, y = nx, ny
 
 print(out)
-    

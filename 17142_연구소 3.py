@@ -44,6 +44,7 @@ def bfs(combi):
                     queue.append((nx, ny))
                     visited[nx][ny] = visited[x][y] + 1 # 시간 측정에는 안 쓰여
     
+    # [[1,2][3,4]] + [] = [1,2] + [3,4] + [] = [1,2,3,4]
     if sum(visited, []).count(-1) != wall_cnt: # 벽보다 -1이 많으면(지나지 않은 빈칸이 있음)
         return sys.maxsize
     return v_time        
