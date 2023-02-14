@@ -16,7 +16,6 @@ def dfs (sx, sy, go, amount):
             dfs(nx, ny, go+1, amount+paper[nx][ny])
             visited[nx][ny] = 0
 
-
 def another_shape(sx, sy): # ㅜ 모양 처리하기
     # ㅜ
     if 0<= sx < N-1 and 0 <= sy < M-2:
@@ -30,7 +29,6 @@ def another_shape(sx, sy): # ㅜ 모양 처리하기
     # ㅓ
     if 0<= sx < N-2 and 1 <= sy < M:
         tsum.add(paper[sx][sy] + paper[sx+1][sy] + paper[sx+2][sy] + paper[sx+1][sy-1])
-
 
 lines = input() 
 N, M = map(int, lines[0].split())
