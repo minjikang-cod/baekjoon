@@ -15,6 +15,7 @@ N = int(input())
 #        num_list.append(min(num_list[i//3]+i%3, num_list[i//2]+i%2)+1)
 #    return num_list[N]
 
+
 num_list = [0]*(N+1)
 
 def make1_2(N): # 시간 덜 걸려
